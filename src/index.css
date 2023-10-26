@@ -14,6 +14,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: "PixelFont";
+  src: url("./fonts/Pixeltype.ttf");
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -30,6 +35,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #413543;
+  font-family: "PixelFont";
 }
 
 h1 {
