@@ -1,0 +1,17 @@
+.skills-icons{
+    display: inline-block;
+    position: relative;
+    width: 60vw;
+}
+
+.skills-icons img{
+    margin: 10px;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 10px;
+}
+
+.skills-icons img:hover{
+    cursor:pointer;
+    opacity: 0.8;
+}

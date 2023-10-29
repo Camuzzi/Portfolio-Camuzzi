@@ -12,7 +12,7 @@ const Sidebar = () => {
     return(
         <div className="sidebar">
             <div className="sidebar-header">
-                <h3>Agustin <br /> Camuzzi</h3>
+                <h3>Agustin Camuzzi</h3>
             </div>
             <ul className="sidebar-icons">
                 <li>
@@ -44,7 +44,7 @@ const Sidebar = () => {
                 <img src={linkedInLogo} alt="Linked In Logo" title="LinkedIn" className="icon-social"/>
                 </a>
                 <a href="'https://github.com/Camuzzi/'" target="_blank">
-                <img src={gitLogo} alt="GitHub Logo" title="GitHub" className="icon-social"/>
+                <img src={gitLogo} alt="GitHub Logo" title="GitHub Logo" className="icon-social"/>
                 </a>
             </ul>
             
