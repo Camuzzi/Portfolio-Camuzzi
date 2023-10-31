@@ -1,8 +1,9 @@
+import "./Home.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
     return(
-        <div>
+        <div className="container-home">
             <h1><b>Hello!<br /> I'm Agustin Camuzzi<br /> Full Stack Developer</b> </h1>
             <h2> Welcome to my portfolio</h2>
             <br />

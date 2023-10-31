@@ -16,7 +16,7 @@ const Sidebar = () => {
             </div>
             <ul className="sidebar-icons">
                 <li>
-                    <Link to="/home">
+                    <Link to="/">
                          <img src={homeLogo} alt="Home Logo" title="Home" className="icon"/>
                     </Link>
                 </li>

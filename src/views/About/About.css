@@ -14,9 +14,12 @@
 }
 
 .about-container h4{
-    font-size:1.1em;
+    font-size:1.3em;
 }
 
+.about-container button:hover{
+    transform: scale(1.1);
+}
 
 .col-left{
     margin-top: 10vh;
@@ -29,6 +32,7 @@
     height: 2em;
 }
 
+
 .col-right{
     display: flex;
     flex-direction: column;
@@ -38,4 +42,13 @@
 .col-right button{
     display: block;
     margin-top: 15px;
+}
+
+.col-right button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.col-right button a:hover{
+    text-decoration: underline;
 }

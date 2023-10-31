@@ -39,8 +39,7 @@
 }
 
 .icon:hover{
-    width: 2.7em;
-    height: 2.7em;
+    transform: scale(1.5);
 }
 
 .icon-social{

@@ -1,0 +1,7 @@
+.container-home{
+    font-size: larger;
+}
+
+.container-home button:hover{
+    transform: scale(1.3);
+}
