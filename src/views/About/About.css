@@ -13,14 +13,26 @@
     transform: translateX(-50%);
 }
 
+.about-container h4{
+    font-size:1.1em;
+}
+
+
 .col-left{
-    margin-right: 100px;
+    margin-top: 10vh;
+    margin-left: 10vh;
     width: 50vw;
+}
+
+.col-left img{
+    width: 2em;
+    height: 2em;
 }
 
 .col-right{
     display: flex;
     flex-direction: column;
+    margin-left: 20vh;
 }
 
 .col-right button{

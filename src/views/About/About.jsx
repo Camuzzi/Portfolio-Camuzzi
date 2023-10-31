@@ -2,6 +2,7 @@ import "./About.css";
 
 import { Link } from "react-router-dom";
 import Card from "../../components/card/Card";
+import wpLogo from "../../assets/whatsapp.svg";
 
 const About = () => {
     return(
@@ -9,18 +10,17 @@ const About = () => {
 
             <h1>About me</h1>
             <div className="col-left">
-                <h3>Full Stack Developer graduated from Henry Bootcamp, with  800 hours of theoretical-practical courses, learning from the basics to working with a team and with agile methodologies</h3>
-                <h3>Fascinated with the IT world and the new techonologies, such as the AIs, machine learning and crypto world. Thanks to my background in administration, sales and volunteering, through the years I developed valious skills to team work, to comunicate and to become a proactive person</h3>
-                <h3>Always open to new opportunities and to grow as a better professional as developer, if you want to know my skills, click here 👇</h3>
+                <h4>"I am a Full Stack Developer, a graduate of the Henry Bootcamp, with over 800 hours of theoretical and practical courses. I have honed my skills from the fundamentals to collaborating within a team, and utilizing agile methodologies.<br/>My deep fascination with the IT world  and emerging technologies, including Artificial Intelligence, Machine Learning, and the world of cryptocurrencies, has been a driving force in my career. Building on my background in administration, sales, and volunteering, I have cultivated valuable skills in teamwork, communication, and proactive problem-solving over the years.</h4>
+                <h4>I'm always eager to embrace new opportunities and continually enhance my professional development as a developer. If you're interested in exploring my skill set, please click below 👇.</h4>
                 <Link to="/skills">
                     <button>
                         skills
                     </button>
                 </Link>
-                <h3>And if you want to comunicate with me to develop a project or to know more about me click here 👇</h3>
-                <button>
-                    Link to wp
-                </button>
+                <h4>Likewise, if you'd like to reach out for potential collaborations or to learn more about me, feel free to contact me here 👇."</h4>
+                <a href="https://wa.me/5492664953687?text=Hello Agustin!" target="_blank">
+                    <img src={wpLogo} alt="Whatsapp Logo" title="Send me a message!" />
+                </a>
             </div>
 
             <div className="col-right">
