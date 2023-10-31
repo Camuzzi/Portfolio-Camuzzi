@@ -1,0 +1,29 @@
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container h1{
+    font-size: 5em;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-left{
+    margin-right: 100px;
+    width: 50vw;
+}
+
+.col-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-right button{
+    display: block;
+    margin-top: 15px;
+}
