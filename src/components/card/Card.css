@@ -1,4 +1,4 @@
-.card {
+.card-about {
     width: 190px;
     height: 254px;
     background: rgb(45, 45, 45);
@@ -12,7 +12,7 @@
     margin: 10px;
   }
   
-  .card:hover {
+  .card-about:hover {
     border-radius: 15px;
     cursor: pointer;
     transform: scale(1.2);
@@ -31,7 +31,7 @@
     border-radius: 15px;
   }
   
-  .card:hover .first-content {
+  .card-about:hover .first-content {
     height: 0px;
     opacity: 0;
   }
@@ -52,14 +52,14 @@
   left: 0;
   }
   
-  .card:hover .second-content {
+  .card-about:hover .second-content {
     opacity: 1;
     height: 100%;
     font-size: 1.8rem;
     transform: rotate(0deg);
   }
   
-  .card img {
+  .card-about img {
     max-width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
     height: auto; /* Mantiene la relación de aspecto */
     display: block;

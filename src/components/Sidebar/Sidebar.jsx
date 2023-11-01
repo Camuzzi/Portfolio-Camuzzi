@@ -43,7 +43,7 @@ const Sidebar = () => {
                 <a href="https://www.linkedin.com/in/agustin-camuzzi-3a9b81272/" target="_blank">
                 <img src={linkedInLogo} alt="Linked In Logo" title="LinkedIn" className="icon-social"/>
                 </a>
-                <a href="'https://github.com/Camuzzi/'" target="_blank">
+                <a href="https://github.com/Camuzzi/" target="_blank">
                 <img src={gitLogo} alt="GitHub Logo" title="GitHub Logo" className="icon-social"/>
                 </a>
             </ul>

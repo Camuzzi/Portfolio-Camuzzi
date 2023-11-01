@@ -22,7 +22,14 @@ const Skills = () => {
             <div className="skills-icons">
                 <h2>Tech Skills:</h2>
                 <p>Programming languanges and tools to developing</p>
-                <img src={logoJS} alt="JS" title="JavaScript"/>
+
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoJS} alt="JS" title="JavaScript"/>
+                    </div>
+                    <div className="tech-name">JavaScript</div>
+                </div>
+
                 <img src={logoNode} alt="Node" title="Node"/>
                 <img src={logoReact} alt="React" title="React"/>
                 <img src={logoRedux} alt="Redux" title="Redux"/>

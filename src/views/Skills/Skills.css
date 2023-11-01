@@ -15,3 +15,28 @@
     cursor:pointer;
     opacity: 0.8;
 }
+
+/* .tech-logo img{
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+.tech-name{
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.tech-icon:hover .tech-logo{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.tech-icon:hover .tech-name{
+    display: block;
+} */
