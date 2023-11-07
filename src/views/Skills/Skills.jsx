@@ -13,35 +13,142 @@ import logoReact from "../../assets/technologies/react.svg";
 import logoRedux from "../../assets/technologies/redux.svg";
 import logoVite from "../../assets/technologies/vitejs.svg";
 import logoWebpack from "../../assets/technologies/webpack.svg";
+import logoGitHub from "../../assets/technologies/github-icon.svg";
+import logoSlack from "../../assets/technologies/slack-icon.svg";
+import logoSequelize from "../../assets/technologies/sequelize.svg";
+import logoTrello from "../../assets/technologies/trello.svg";
 
 
 const Skills = () => {
     return(
-        <div>
+        <div className="skills-container">
             <h1>Skills</h1>
             <div className="skills-icons">
                 <h2>Tech Skills:</h2>
-                <p>Programming languanges and tools to developing</p>
 
                 <div className="tech-icon">
                     <div className="tech-logo">
-                        <img src={logoJS} alt="JS" title="JavaScript"/>
+                        <img src={logoJS} alt="JS"/>
                     </div>
                     <div className="tech-name">JavaScript</div>
                 </div>
 
-                <img src={logoNode} alt="Node" title="Node"/>
-                <img src={logoReact} alt="React" title="React"/>
-                <img src={logoRedux} alt="Redux" title="Redux"/>
-                <img src={logoBootstrap} alt="Bootstrap" title="Bootstrap"/>
-                <img src={logoCss} alt="CSS" title="CSS"/>
-                <img src={logoHtml} alt="HTML" title="HTML"/>
-                <img src={logoSQL} alt="SQL" title="PostgreSQL"/>
-                <img src={logoWebpack} alt="Webpack" title="Webpack"/>
-                <img src={logoVite} alt="Vite" title="Vite"/>
-                <img src={logoGit} alt="Git" title="Git"/>
-                <img src={logoNPM} alt="NPM" title="NPM"/>
-                <img src={logoFigma} alt="Figma" title="Figma"/>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoNode} alt="Node"/>
+                    </div>
+                    <div className="tech-name">NodeJs</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoReact} alt="React"/>
+                    </div>
+                    <div className="tech-name">React</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoRedux} alt="Redux"/>
+                    </div>
+                    <div className="tech-name">Redux</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoBootstrap} alt="Bootstrap"/>
+                    </div>
+                    <div className="tech-name">Bootstrap</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoCss} alt="CSS"/>
+                    </div>
+                    <div className="tech-name">CSS</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoHtml} alt="HTML"/>
+                    </div>
+                    <div className="tech-name">HTML</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoSQL} alt="SQL"/>
+                    </div>
+                    <div className="tech-name">PostgreSQL</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoWebpack} alt="Webpack"/>
+                    </div>
+                    <div className="tech-name">Webpack</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoVite} alt="Vite"/>
+                    </div>
+                    <div className="tech-name">Vite</div>
+                </div>
+                
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoGit} alt="Git"/>
+                    </div>
+                    <div className="tech-name">Git</div>
+                </div>
+                
+                
+                
+               
+
+                
+
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoSequelize} alt="Sequelize"/>
+                    </div>
+                    <div className="tech-name">Sequelize</div>
+                </div>
+
+                
+
+                <h2>Tools:</h2>
+
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoTrello} alt="Trello"/>
+                    </div>
+                    <div className="tech-name">Trello</div>
+                </div>
+
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoSlack} alt="Slack"/>
+                    </div>
+                    <div className="tech-name">Slack</div>
+                </div>
+
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoGitHub} alt="GitHub"/>
+                    </div>
+                    <div className="tech-name">GitHub</div>
+                </div>
+
+                <div className="tech-icon">
+                    <div className="tech-logo">
+                        <img src={logoFigma} alt="Figma"/>
+                    </div>
+                    <div className="tech-name">Figma</div>
+                </div>
+
             </div>
         </div>
     );

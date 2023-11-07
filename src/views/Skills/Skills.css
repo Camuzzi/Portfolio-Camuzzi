@@ -1,7 +1,18 @@
+.skills-container h1{
+    font-size: 5em;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .skills-icons{
     display: inline-block;
     position: relative;
+    padding-top: 10vh;
     width: 60vw;
+    font-size: 1.1em;
 }
 
 .skills-icons img{
@@ -11,32 +22,30 @@
     border-radius: 10px;
 }
 
-.skills-icons img:hover{
-    cursor:pointer;
-    opacity: 0.8;
+.tech-icon{
+    display: inline-block;
 }
 
-/* .tech-logo img{
-    filter: grayscale(100%);
-    transition: all 0.3s;
-}
-
-.tech-name{
-    display: none;
-    position: absolute;
-    width: 100%;
-    padding: 10px;
+.tech-icon:hover{
+    transition: all 0.4s;
+    transform: scale(1.1);
+    border: 1px solid black;
+    border-radius: 10%;
     background-color: white;
-    text-align: center;
-    font-weight: bold;
-    transition: all 0.3s;
+    color: black;
 }
 
 .tech-icon:hover .tech-logo{
-    filter: grayscale(0%);
-    opacity: 1;
+    filter: none;
+    -webkit-filter: none;
 }
 
-.tech-icon:hover .tech-name{
-    display: block;
-} */
+.tech-logo{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.tech-logo:hover{
+    transition: all 0.1s;
+    filter: none;
+}
