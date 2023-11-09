@@ -7,8 +7,12 @@ import logoPhone from "../../assets/contact/phone.svg";
 import logoMail from "../../assets/contact/mail.svg";
 import { useState } from "react";
 
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
 
 const Contact = () => {
+    const MySwal = withReactContent(Swal);
 
     const [formData,setFormData] = useState({
         user_name: "",
@@ -22,15 +26,37 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.send("service_8njxbg9","contact_form",formData)
-        .then((result) => {
-            console.log(result.text);
-            alert("Email sent successfully, I will conctact you soon!");
-            location.reload();
-        }, (error) => {
-            console.log(error.text);
-            alert("Opss, some error ocurred, try again.");
-        })
+        if (formData.user_email === "" || formData.user_name === "" || formData.user_subject === "" || formData.message === "" ) {
+            MySwal.fire({
+                title: <strong>WARNING</strong>,
+                html: <i>You have to complete all fields</i>,
+                icon: 'warning',     
+                background : "#1d1d1d",
+                customClass:{
+                  container: 'custom-alert-container',
+                }
+              });
+        } else {
+            emailjs.send("service_8njxbg9","contact_form",formData)
+            .then((result) => {
+                console.log(result.text);
+                MySwal.fire({
+                    title: <strong>SUCCESS</strong>,
+                    html: <i>Email sent successfully, I will conctact you soon!</i>,
+                    icon: 'success',     
+                    background : "#1d1d1d",
+                    customClass:{
+                      container: 'custom-alert-container',
+                    }
+                  }).then(() => {
+                      location.reload();
+                  });
+            }, (error) => {
+                console.log(error.text);
+                alert("Opss, some error ocurred, try again.");
+            })
+        }
+
     }
 
     return(
