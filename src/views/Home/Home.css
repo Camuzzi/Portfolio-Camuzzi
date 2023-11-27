@@ -5,3 +5,14 @@
 .container-home button:hover{
     transform: scale(1.3);
 }
+
+@media (max-width: 768px) {
+    .container-home {
+        font-size: medium; /* Ajusta el tamaño del texto para pantallas más pequeñas si es necesario */
+        padding-bottom: 30vh;
+    }
+
+    .container-home button {
+        margin-top: 10px; /* Reduce el espacio entre los botones y el texto para pantallas más pequeñas */
+    }
+}
