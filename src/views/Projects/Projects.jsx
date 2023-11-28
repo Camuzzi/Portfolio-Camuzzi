@@ -9,11 +9,16 @@ import pokemonAbout from "../../assets/projects/pokemon.about.png";
 import pokemonForm from "../../assets/projects/pokemon.form.png";
 import pokemonLanding from "../../assets/projects/pokemon.landing.png";
 
+import { useTranslation } from "react-i18next";
+
 
 const Projects = () => {
+
+    const [t, i18n] = useTranslation("global");
+
     return(
         <div className="projects-container">
-            <h1>Projects</h1>
+            <h1>{t("projects.title")}</h1>
             <div className="cards-container">
                 <div className="project">
                     <CardProject
@@ -22,8 +27,8 @@ const Projects = () => {
                         imgPage2={eightDetail}
                         imgPage3={eightStore}
                         imgPage4={eightProfile}
-                        titlePage="8-bits app"
-                        descriptionPage="Ecommerce of videogames developed using technologies like React, JavaScript, HTML, Redux, Node.js, Bootstrap, PostgreSQL, among other."
+                        titlePage={t("projects.cardTitle1")}
+                        descriptionPage={t("projects.cardDescription1")}
                         linkRepo="https://github.com/negrura14/8_Bits_Front"
                         linkLive="https://8-bits-front.vercel.app/"
                     />
@@ -35,8 +40,8 @@ const Projects = () => {
                         imgPage2={pokemonHome}
                         imgPage3={pokemonForm}
                         imgPage4={pokemonAbout}
-                        titlePage="Pokemon app"
-                        descriptionPage="Pokedex when you can review all pokemons with their details, filter by attack or type and create your own pokemon"
+                        titlePage={t("projects.cardTitle2")}
+                        descriptionPage={t("projects.cardDescription2")}
                         linkRepo="https://github.com/Camuzzi/Pokemon-PI-Camuzzi.git"
                     />
                 </div>

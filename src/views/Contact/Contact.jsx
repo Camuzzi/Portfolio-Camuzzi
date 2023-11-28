@@ -10,8 +10,13 @@ import { useState } from "react";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
+import { useTranslation } from "react-i18next";
+
 
 const Contact = () => {
+
+    const [t, i18n] = useTranslation("global");
+
     const MySwal = withReactContent(Swal);
 
     const [formData,setFormData] = useState({
@@ -61,18 +66,18 @@ const Contact = () => {
 
     return(
         <div className="contact-container">
-            <h1>Contact</h1>
+            <h1>{t("contact.title")}</h1>
             <div className="contact-left">
 
                 <div className="contact-info">
                     <div className="contacts">
                         <img src={logoMail} alt="Mail"/>
-                        <h4>Contact me via email:</h4>
+                        <h4>{t("contact.contact1")}</h4>
                         <h5>camuzziagustin@gmail.com</h5>
                     </div>
                     <div className="contacts">
                         <img src={logoPhone} alt="Phone"/>
-                        <h4>Contact me by my phone:</h4>
+                        <h4>{t("contact.contact3")}</h4>
                         <h5>+54 (266) 4953687</h5>
                     </div>
                 </div>
@@ -80,11 +85,11 @@ const Contact = () => {
                 <div className="contact-info">
                     <div className="contacts">
                         <img src={logoLocation} alt="Location"/>
-                        <h4>Current location:</h4>
+                        <h4>{t("contact.contact2")}</h4>
                         <h5>San Luis, Argentina</h5>
                     </div>
                     <div className="contacts">
-                        <h4> Or send me a message in Whatsapp 👇."</h4>
+                        <h4>{t("contact.contact4")}</h4>
                         <a href="https://wa.me/5492664953687?text=Hello Agustin!" target="_blank">
                             <img src={wpLogo} alt="Whatsapp Logo" title="Send me a message!" />
                         </a> 
@@ -96,7 +101,7 @@ const Contact = () => {
                 <form onSubmit={sendEmail}>
                     <div className="name-email-fields">
                     <div className="form-field">
-                        <label htmlFor="user_name">Name</label>
+                        <label htmlFor="user_name">{t("contact.form1")}</label>
                         <input 
                             placeholder="Agustin Camuzzi"
                             type="text"
@@ -110,7 +115,7 @@ const Contact = () => {
                     <div className="form-field">
                         <label htmlFor="user_email">Email</label>
                         <input 
-                            placeholder="example@gmail.com"
+                            placeholder={t("contact.placeholder1")}
                             type="text"
                             name="user_email"
                             id="user_email"
@@ -120,9 +125,9 @@ const Contact = () => {
                     </div>
                     </div>
                     <div className="form-field">
-                        <label htmlFor="user_subject">Subject</label>
+                        <label htmlFor="user_subject">{t("contact.form2")}</label>
                         <input 
-                            placeholder="Subject"
+                            placeholder={t("contact.form2")}
                             type="text"
                             name="user_subject"
                             id="user_subject"
@@ -132,9 +137,9 @@ const Contact = () => {
                     </div>
 
                     <div className="form-field">
-                        <label htmlFor="message">Message</label>
+                        <label htmlFor="message">{t("contact.form3")}</label>
                         <textarea 
-                            placeholder="Message..."
+                            placeholder={t("contact.placeholder2")}
                             type="text"
                             name="message"
                             id="message"
@@ -144,7 +149,7 @@ const Contact = () => {
                     </div>
 
                     <button type="sumbit">
-                        Send
+                        {t("contact.sumbit")}
                     </button>
 
                 </form>

@@ -7,13 +7,35 @@ import projectsLogo from "../../assets/projects.svg";
 import contactLogo from "../../assets/contact.svg";
 import linkedInLogo from "../../assets/linkedIn.svg";
 import gitLogo from "../../assets/github.svg";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
+
 
 const Sidebar = () => {
+
+    const [t, i18n] = useTranslation("global");
+
+    const [selectedLanguage, setSelectedLanguage] = useState("en");
+
+    const handleLanguageChange = (event) => {
+        const newLanguage = event.target.value;
+        setSelectedLanguage(newLanguage)
+        i18n.changeLanguage(newLanguage);
+    }
+
     return(
         <div className="sidebar">
             <div className="sidebar-header">
                 <h3>Agustin Camuzzi</h3>
             </div>
+            <select
+                value={selectedLanguage}
+                onChange={handleLanguageChange}
+            >
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="pt">Portuguese</option>
+            </select>
             <ul className="sidebar-icons">
                 <li>
                     <Link to="/">
@@ -47,7 +69,6 @@ const Sidebar = () => {
                 <img src={gitLogo} alt="GitHub Logo" title="GitHub Logo" className="icon-social"/>
                 </a>
             </ul>
-            
             
         </div>
     );

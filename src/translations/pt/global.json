@@ -1,0 +1,46 @@
+{
+    "home": {
+        "title1": "Ola!",
+        "title2": "Sou Agustin Camuzzi",
+        "title3": "Desenvolvedor Full Stack",
+        "title4": "Bem vindo ao meu portfolio",
+        "button1": "Contato",
+        "button2": "Projetos"
+    },
+    "about": {
+        "title": "Sobre mim",
+        "description1": "Sou Desenvolvedor Full Stack, formado no bootcamp Soy Henry com mais de 800 horas teoricas e praticas. Desenvolvi minhas habilidades a partir dos principios de colaboracao em equipe e utilizacao de metodologias ageis.",
+        "description2": "Meu profundo fascinio pelo mundo da TI e pelas tecnologias emergentes, incluindo Inteligencia Artificial, Machine Learning e o mundo das criptomoedas, tem sido uma forca motriz em minha carreira. Com base na minha experiencia em administracao, vendas e voluntariado, cultivei habilidades valiosas em trabalho em equipe, comunicacao e solucao proativa de problemas ao longo dos anos.",
+        "description3":"Estou sempre ansioso para aproveitar novas oportunidades e melhorar continuamente meu desenvolvimento profissional como desenvolvedor. Se voce estiver interessado em explorar meu conjunto de habilidades, clique abaixo 👇.",
+        "button1": "skills",
+        "button2": "Ver CV",
+        "button3": "Baixar CV"
+    },
+    "skills": {
+        "title": "Skills",
+        "title2": "Tech skills:",
+        "title3": "Ferramentas:"
+    },
+    "projects": {
+        "title": "Projetos",
+        "cardTitle1": "8-bits app",
+        "cardDescription1": "Ecommerce de videogames desenvolvido utilizando tecnologias como React.js, JavaScript, HTML, Redux, Node.js, Bootstrap, PostgreSQL, entre outras.",
+        "cardTitle2": "Pokemon app",
+        "cardDescription2": "Pokedex onde voce pode ver todos os pokemons e seus detalhes, filtrar por ataque ou tipo e criar seu proprio pokemon.",
+        "button1": "Ver Pagina",        
+        "button2": "Ver Repo"        
+    },
+    "contact": {
+        "title": "Contato",
+        "contact1": "Contate-me por email:",
+        "contact2": "Localizacao atual:",
+        "contact3": "Entre em contato comigo pelo celular:",
+        "contact4": "Ou me mande uma mensagem no Whatsapp 👇",
+        "form1": "Nome",
+        "form2": "Assunto",
+        "form3": "Mensagem",
+        "placeholder1": "exemplo@gmail.com",
+        "placeholder2": "Mensagem...",
+        "sumbit": "Enviar"
+    }
+}

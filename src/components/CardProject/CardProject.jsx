@@ -3,7 +3,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import imgPage from "../../assets/projects/bits-profile.png";
 
+import { useTranslation } from "react-i18next";
+
 const CardProject = ({ imgPage,imgPage2,imgPage3,imgPage4,titlePage,descriptionPage,linkRepo,linkLive }) => {
+
+    const [t, i18n] = useTranslation("global");
+
     return(
         <div className="card-project">
             <div className="card-image">
@@ -31,9 +36,9 @@ const CardProject = ({ imgPage,imgPage2,imgPage3,imgPage4,titlePage,descriptionP
                 {descriptionPage}
             </p>
             {linkLive && 
-            <a className="footer" href={linkLive} target="_blank">View page</a>
+            <a className="footer" href={linkLive} target="_blank">{t("projects.button1")}</a>
             }
-            <a className="footer" href={linkRepo} target="_blank">View Repo</a>           
+            <a className="footer" href={linkRepo} target="_blank">{t("projects.button2")}</a>           
             
         </div>
     );

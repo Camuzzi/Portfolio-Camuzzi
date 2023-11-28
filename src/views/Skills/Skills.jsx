@@ -18,13 +18,18 @@ import logoSlack from "../../assets/technologies/slack-icon.svg";
 import logoSequelize from "../../assets/technologies/sequelize.svg";
 import logoTrello from "../../assets/technologies/trello.svg";
 
+import { useTranslation } from "react-i18next";
+
 
 const Skills = () => {
+
+    const [t, i18n] = useTranslation("global");
+
     return(
         <div className="skills-container">
-            <h1>Skills</h1>
+            <h1>{t("skills.title")}</h1>
             <div className="skills-icons">
-                <h2>Tech Skills:</h2>
+                <h2>{t("skills.title2")}</h2>
 
                 <div className="tech-icon">
                     <div className="tech-logo">
@@ -104,22 +109,14 @@ const Skills = () => {
                     <div className="tech-name">Git</div>
                 </div>
                 
-                
-                
-               
-
-                
-
                 <div className="tech-icon">
                     <div className="tech-logo">
                         <img src={logoSequelize} alt="Sequelize"/>
                     </div>
                     <div className="tech-name">Sequelize</div>
-                </div>
+                </div>               
 
-                
-
-                <h2>Tools:</h2>
+                <h2>{t("skills.title3")}</h2>
 
                 <div className="tech-icon">
                     <div className="tech-logo">

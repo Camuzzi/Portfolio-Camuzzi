@@ -1,0 +1,46 @@
+{
+    "home": {
+        "title1": "Hola!",
+        "title2": "Soy Agustin Camuzzi",
+        "title3": "Desarrollador Full Stack",
+        "title4": "Bienvenid@ a mi portfolio",
+        "button1": "Contacto",
+        "button2": "Projectos"
+    },
+    "about": {
+        "title": "Acerca de mi",
+        "description1": "Soy un Desarrollador Full Stack, graduado del bootcamp de Soy Henry con mas de 800 horas teorico practicas. He desarrollado mis habailidades de los principios de colaborar en equipo y utilizando metodologias agiles.",
+        "description2": "Mi profunda fascinacion por el mundo de las tecnologias de la informacion y las tecnologias emergentes, incluida la inteligencia artificial, el aprendizaje automatico y el mundo de las criptomonedas, ha sido una fuerza impulsora en mi carrera. Sobre la base de mi experiencia en administracion, ventas y voluntariado, a lo largo de los anos he cultivado valiosas habilidades de trabajo en equipo, comunicacion y resolucion proactiva de problemas.",
+        "description3":"Siempre estoy ansioso por aprovechar nuevas oportunidades y mejorar continuamente mi desarrollo profesional como desarrollador. Si estas interesado en explorar mi conjunto de habilidades, haga clic a continuacion 👇.",
+        "button1": "skills",
+        "button2": "Ver CV",
+        "button3": "Descargar CV"
+    },
+    "skills": {
+        "title": "Skills",
+        "title2": "Tech skills:",
+        "title3": "Herramientas:"
+    },
+    "projects": {
+        "title": "Projectos",
+        "cardTitle1": "8-bits app",
+        "cardDescription1": "Ecommerce de videojuegos desarrollado usando tecnologias como React.js, JavaScript, HTML, Redux, Node.js, Bootstrap, PostgreSQL, entre otras.",
+        "cardTitle2": "Pokemon app",
+        "cardDescription2": "Pokedex en la cual puedes ver todos los pokemones y sus detalles, filtrar por ataque o tipo y crear tu propio pokemon.",
+        "button1": "Ver Pagina",        
+        "button2": "Ver Repo"        
+    },
+    "contact": {
+        "title": "Contacto",
+        "contact1": "Contactame via email:",
+        "contact2": "Ubicacion actual:",
+        "contact3": "Contactame por celular:",
+        "contact4": "O enviame un mensaje al Whatsapp 👇",
+        "form1": "Nombre",
+        "form2": "Asunto",
+        "form3": "Mensaje",
+        "placeholder1": "ejemplo@gmail.com",
+        "placeholder2": "Mensaje...",
+        "sumbit": "Enviar"
+    }
+}
