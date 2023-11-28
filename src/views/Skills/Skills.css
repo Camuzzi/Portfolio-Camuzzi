@@ -24,6 +24,7 @@
 
 .tech-icon{
     display: inline-block;
+    margin: 10px;
 }
 
 .tech-icon:hover{
@@ -48,4 +49,19 @@
 .tech-logo:hover{
     transition: all 0.1s;
     filter: none;
+}
+
+@media (max-width: 768px) {
+    .skills-container h1 {
+        margin-top: 12vh;
+        font-size: 50px;
+    }
+
+    .skills-icons {
+        width: 80vw; /* Reducir el ancho para una mejor presentación en pantallas pequeñas */
+    }
+
+    .tech-icon {
+        margin: 5px; /* Ajusta según sea necesario para separar los íconos */
+    }
 }

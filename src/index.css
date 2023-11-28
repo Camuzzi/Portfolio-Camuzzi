@@ -34,7 +34,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #803754;
+  /* background-color: #803754; */
+  background-image: url("./assets/edificios2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: "PixelFont";
 }
 
