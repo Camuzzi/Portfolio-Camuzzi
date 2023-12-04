@@ -9,10 +9,33 @@
 
 .cards-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 .project{
     margin: 1.5em;
     padding-top: 3em;
+    flex: 0 0 calc(50% - 3em); 
+    max-width: calc(50% - 3em);
+}
+
+@media (max-width: 768px) {
+    .projects-container h1 {
+        margin-top: 12vh;
+        font-size: 50px;
+    }
+
+    .project {
+        flex: 0 0 calc(100% - 3em);
+        max-width: calc(100% - 3em); 
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px; /* Ajusta este valor según sea necesario */
+    }
 }

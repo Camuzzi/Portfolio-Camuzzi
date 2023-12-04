@@ -28,15 +28,15 @@ const Sidebar = () => {
             <div className="sidebar-header">
                 <h3>Agustin Camuzzi</h3>
             </div>
+            <ul className="sidebar-icons">
             <select
                 value={selectedLanguage}
                 onChange={handleLanguageChange}
             >
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
-                <option value="pt">Portuguese</option>
+                <option value="en">{t("sidebar.lan1")}</option>
+                <option value="es">{t("sidebar.lan2")}</option>
+                <option value="pt">{t("sidebar.lan3")}</option>
             </select>
-            <ul className="sidebar-icons">
                 <li>
                     <Link to="/">
                          <img src={homeLogo} alt="Home Logo" title="Home" className="icon"/>

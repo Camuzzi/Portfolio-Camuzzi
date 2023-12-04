@@ -42,5 +42,10 @@
         "placeholder1": "exemplo@gmail.com",
         "placeholder2": "Mensagem...",
         "sumbit": "Enviar"
+    },
+    "sidebar": {
+        "lan1": "Ingles",
+        "lan2": "Espanhol",
+        "lan3": "Portugues"
     }
 }
