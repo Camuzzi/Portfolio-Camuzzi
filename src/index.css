@@ -17,6 +17,7 @@
 @font-face {
   font-family: "PixelFont";
   src: url("./fonts/Pixeltype.ttf");
+  color: #fff0c9;
 }
 
 a {
@@ -68,7 +69,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #fff0c9;
     background-color: #ffffff;
   }
   a:hover {
